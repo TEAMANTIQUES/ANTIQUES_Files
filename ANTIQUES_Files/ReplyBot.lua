@@ -106,17 +106,17 @@ end
 
 if Manager(msg) then
 if text == 'تفعيل ردود البوت' or text == 'تفعيل الردود' then
-if not DevAbs:get(ANTIQUES..'Abs:Lock:Reply'..msg.chat_id_) then
+if not DevAbs:get(ANTIQUES..'Abs:Lock:Replybot'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙ردود البوت بالتاكيد مفعله ', 1, 'md')
 else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙تم تفعيل ردود البوت', 1, 'md')
-DevAbs:del(ANTIQUES..'Abs:Lock:Reply'..msg.chat_id_)
+DevAbs:del(ANTIQUES..'Abs:Lock:Replybot'..msg.chat_id_)
 end end
 if text == 'تعطيل ردود البوت' or text == 'تعطيل الردود' then
-if DevAbs:get(ANTIQUES..'Abs:Lock:Reply'..msg.chat_id_) then
+if DevAbs:get(ANTIQUES..'Abs:Lock:Replybot'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙ردود البوت بالتاكيد معطله ', 1, 'md')
 else
-DevAbs:set(ANTIQUES..'Abs:Lock:Reply'..msg.chat_id_,true)
+DevAbs:set(ANTIQUES..'Abs:Lock:Replybot'..msg.chat_id_,true)
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙تم تعطيل ردود البوت', 1, 'md')
 end end
 end
