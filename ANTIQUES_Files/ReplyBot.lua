@@ -124,5 +124,5 @@ end
 
 end
 return {
-ANTIQUES = Reply
+ANTIQUES = Replybot
 }
